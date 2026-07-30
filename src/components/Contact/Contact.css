@@ -1,0 +1,181 @@
+/* ====================================
+CONTACT SECTION
+==================================== */
+
+.contact-section{
+
+    max-width: 100%;
+    margin: 0;
+    padding: 80px 5%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+/* Inner wrapper to keep the form centered and neat */
+.contact-section form {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* ====================================
+FORM
+==================================== */
+
+
+.contact-form{
+
+    margin-bottom: 20px;
+    text-align: left; /* Aligns labels and inputs to the left corner */
+
+}
+
+
+
+.contact-form label{
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: 600;
+
+    color: var(--primary-color);
+
+}
+
+
+
+.contact-form input,
+.contact-form textarea{
+
+    width: 100%;
+
+    padding: 14px 16px;
+
+    background-color: #ffffff; /* Permanent white background */
+
+    border: 2px solid #b0c4de; /* Permanent clean border color */
+
+    border-radius: 10px;
+
+    font-size: 1rem;
+
+    font-family: inherit;
+
+    color: #333333; /* Permanent dark text color */
+
+    transition: .3s;
+
+}
+
+
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+
+    outline: none;
+
+    border-color: var(--primary-color);
+
+    box-shadow: 0 0 8px rgba(27,79,114,.25);
+
+}
+
+
+
+.contact-form textarea{
+
+    resize: vertical;
+
+    min-height: 150px;
+
+}
+
+
+
+/* ====================================
+SEND MESSAGE BUTTON
+==================================== */
+
+
+.contact-section .btn{
+
+    display: block;
+
+    margin: 30px auto 0;
+
+}
+
+
+
+.btn{
+
+    display: inline-block;
+
+    padding: 12px 30px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+    transition: background-color 0.32s ease, transform 0.32s ease;
+
+}
+
+
+
+.btn-primary{
+
+    background: #F18F01; /* Requested button color */
+    color: white;
+
+}
+
+
+
+.btn-primary:hover{
+
+    background: #1B4F72; /* Requested hover color */
+
+}
+
+
+
+.btn-primary:disabled{
+
+    opacity: .7;
+
+    cursor: not-allowed;
+
+}
+
+
+
+/* ====================================
+DARK MODE
+==================================== */
+
+/* Entire section background becomes light black across full width */
+body.dark-mode .contact-section {
+
+    background-color: #1a1a1a !important;
+
+}
+
+/* "Get In Touch" heading becomes white */
+body.dark-mode .contact-section h2 {
+
+    color: #ffffff !important;
+
+}
+
+
+body.dark-mode .contact-form label{
+
+    color: white;
+
+}

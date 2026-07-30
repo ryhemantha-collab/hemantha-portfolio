@@ -1,0 +1,123 @@
+/* ====================================
+   HERO SECTION
+==================================== */
+
+.hero-section {
+    margin-top: 80px;   /* Only navbar height */
+    background: #106086;
+    color: white;
+    text-align: center;
+
+    min-height: calc(100vh - 80px);
+
+    padding: 60px 5% 80px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* HERO TITLE */
+
+.hero-section h1 {
+    font-size: 3.2rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    animation: fadeInUp 0.8s ease;
+    color: #F18F01;
+}
+
+/* TAGLINE */
+
+.tagline {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin-bottom: 35px;
+    opacity: 0.95;
+    animation: fadeInUp 1s ease;
+}
+
+/* BUTTON CONTAINER */
+
+.hero-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    animation: fadeInUp 1.2s ease;
+}
+
+/* BUTTON */
+
+.hero-button a {
+    text-decoration: none;
+    background: #F18F01;
+    color: white;
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+/* DARK MODE */
+
+body.dark-mode .hero-button a {
+    color: white;
+}
+
+/* BUTTON HOVER */
+
+.hero-button a:hover {
+    background: white;
+    color: black;
+    transform: translateY(-3px);
+}
+
+/* ====================================
+   ANIMATION
+==================================== */
+
+@keyframes fadeInUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* ====================================
+   RESPONSIVE
+==================================== */
+
+@media (max-width: 768px) {
+
+    .hero-section {
+        padding: 100px 8% 80px;
+    }
+
+    .hero-section h1 {
+        font-size: 2.2rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+
+    .hero-button {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-button a {
+        width: 220px;
+        text-align: center;
+    }
+
+}

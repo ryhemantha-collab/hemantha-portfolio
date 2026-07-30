@@ -1,0 +1,175 @@
+/* ====================================
+   HEADER
+==================================== */
+
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* ====================================
+   NAVBAR
+==================================== */
+
+.navbar {
+    height: 80px;
+    width: 100%;
+    padding: 0 5%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(3, 47, 77, 0.9);
+    backdrop-filter: blur(10px);
+
+    box-sizing: border-box;
+    transition: 0.3s ease;
+}
+
+/* LOGO */
+
+.logo {
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+/* NAV LINKS */
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--accent);
+}
+
+/* BUTTONS */
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* TOGGLE BUTTONS */
+
+.theme-toggle,
+.menu-toggle {
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    background: #F18F01;
+    color: white;
+
+    padding: 10px 14px;
+    border-radius: 8px;
+
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+.theme-toggle:hover,
+.menu-toggle:hover {
+    transform: scale(1.05);
+}
+
+/* Hide menu button on desktop */
+
+.menu-toggle {
+    display: none;
+}
+
+/* ====================================
+   DARK MODE
+==================================== */
+
+body.dark-mode {
+
+    --light: #0F172A;
+    --text: #F5F5F5;
+    --primary-color: #081C2E;
+    --white: #FFFFFF;
+
+}
+
+body.dark-mode .navbar {
+    background: #000;
+}
+
+body.dark-mode .logo,
+body.dark-mode .nav-links a {
+    color: white;
+}
+
+body.dark-mode .nav-links a:hover,
+body.dark-mode .nav-links a.active {
+    color: var(--accent);
+}
+
+/* ====================================
+   MOBILE
+==================================== */
+
+@media (max-width:768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar {
+        height: 70px;
+    }
+
+    .nav-links {
+
+        position: absolute;
+
+        top: 70px;
+        left: -100%;
+
+        width: 100%;
+
+        background: #032F4D;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 25px;
+
+        padding: 30px 0;
+
+        transition: 0.4s ease;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+}
+
+@media (min-width:769px) {
+
+    .menu-toggle {
+        display: none;
+    }
+
+}

@@ -1,0 +1,166 @@
+/* ====================================
+SKILLS SECTION
+==================================== */
+
+
+.skill-section{
+
+    padding:80px 5%;
+
+}
+
+
+
+/* SKILL GRID */
+
+
+.skill-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+
+    gap:30px;
+
+    margin-top:50px;
+
+}
+
+
+
+/* SKILL CARD */
+
+
+.skill-item{
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+
+
+.skill-item:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+
+}
+
+
+
+/* SKILL HEADER */
+
+
+.skill-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:18px;
+
+}
+
+
+
+.skill-header span{
+
+    font-size:22px;
+
+    font-weight:700;
+
+    color:var(--primary-color);
+
+}
+
+
+
+/* PROGRESS BAR */
+
+
+.progress-bar{
+
+    width:100%;
+
+    height:12px;
+
+    background:#e5e5e5;
+
+    border-radius:50px;
+
+    overflow:hidden;
+
+}
+
+
+
+/* PROGRESS */
+
+
+.progress{
+
+    width:0;
+
+    height:100%;
+
+    border-radius:50px;
+
+    background:linear-gradient(
+        90deg,
+        #244a9a,
+        #21b6ff
+    );
+
+    transition:width 1.8s ease;
+
+}
+
+
+
+/* ====================================
+DARK MODE
+==================================== */
+
+
+body.dark-mode .skill-section{
+
+    background-color:#1a1a1a !important;
+
+}
+
+/* Makes the heading (My Skills) turn white in dark mode */
+body.dark-mode .skill-section h2{
+
+    color:#ffffff !important;
+
+}
+
+
+
+/* ====================================
+RESPONSIVE
+==================================== */
+
+
+@media(max-width:768px){
+
+
+    .skill-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+}

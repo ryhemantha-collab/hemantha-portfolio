@@ -1,0 +1,73 @@
+/* ====================================
+ABOUT SECTION
+==================================== */
+
+.about-section{
+    text-align: center;
+    padding: 60px 5%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* PROFILE IMAGE */
+
+.profile-picture{
+    margin: 30px auto;
+}
+
+.profile-picture img{
+    width: 250px;
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+}
+
+/* IMAGE CAPTION */
+
+.profile-picture figcaption{
+    margin-top: 12px;
+    font-weight: 600;
+}
+
+/* ABOUT TEXT */
+
+.about-section p{
+    max-width: 750px;
+    margin: 30px auto;
+    font-size: 1.05rem;
+}
+
+/* ====================================
+DARK MODE FOR ABOUT SECTION
+==================================== */
+
+body.dark-mode .about-section {
+    background-color: #222222 !important; 
+    color: #ffffff !important;
+}
+
+/* Makes the "About Me" heading turn white in dark mode */
+body.dark-mode .about-section h2 {
+    color: #ffffff !important;
+}
+
+body.dark-mode .profile-picture figcaption {
+    color: #ffffff !important;
+}
+
+
+
+/* ====================================
+RESPONSIVE
+==================================== */
+
+@media(max-width: 768px){
+
+    .profile-picture img{
+        width: 220px;
+    }
+
+    .about-section p{
+        font-size: 1rem;
+    }
+
+}

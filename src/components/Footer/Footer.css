@@ -1,0 +1,64 @@
+/* ====================================
+FOOTER
+==================================== */
+
+.site-footer {
+    background-color: #1B4F72 !important; /* Visible background for light mode */
+    color: #ffffff !important;
+    text-align: center;
+    padding: 40px 5%;
+    transition: background-color 0.3s ease;
+}
+
+/* FOOTER TEXT */
+
+.site-footer p,
+.site-footer span,
+.site-footer div {
+    color: #ffffff !important;
+    margin: 12px 0;
+}
+
+/* FOOTER LINKS */
+
+.site-footer a {
+    color: #ffffff !important;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.site-footer a:hover {
+    color: #F18F01 !important;
+}
+
+/* FOOTER YEAR */
+
+.footer-year {
+    margin-top: 20px;
+    font-size: 0.95rem;
+    color: #ffffff !important;
+}
+
+/* ====================================
+DARK MODE
+==================================== */
+
+
+
+body.dark-mode .site-footer p,
+body.dark-mode .site-footer span,
+body.dark-mode .site-footer div,
+body.dark-mode .site-footer a,
+body.dark-mode .footer-year {
+    color: #ffffff !important;
+}
+
+/* ====================================
+RESPONSIVE
+==================================== */
+
+@media(max-width: 768px) {
+    .site-footer {
+        padding: 30px 5%;
+    }
+}
