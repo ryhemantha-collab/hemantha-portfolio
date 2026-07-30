@@ -108,7 +108,7 @@ DESCRIPTION
 
     margin-bottom:20px;
 
-    color:var(--text);
+    color:#555555; /* Fixed color so it stays clear and unchanged in dark mode */
 
 }
 
@@ -137,7 +137,7 @@ TAGS
 
 .project_tags span{
 
-    background:var(--accent);
+    background:#F18F01; /* Updated background color to orange */
 
     color:white;
 
@@ -201,14 +201,36 @@ body.dark-mode .projects-section{
 
 }
 
-/* "My Projects" heading becomes white */
+/* "My Projects" heading matches the color style used in other sections */
+.projects-section h2{
+
+    color: var(--primary-color);
+
+}
+
 body.dark-mode .projects-section h2{
 
     color:#ffffff !important;
 
 }
 
+.projects-section h2 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 40px;
+}
 
+.projects-section h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 4px;
+    background-color: #F18F01;
+    border-radius: 2px;
+}
 
 /* ====================================
 RESPONSIVE

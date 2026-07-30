@@ -55,7 +55,24 @@ body.dark-mode .profile-picture figcaption {
 }
 
 
+/* Underline only for the About section heading */
+.about-section h2 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 40px;
+}
 
+.about-section h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 4px;
+    background-color: #F18F01; /* Matches your accent color */
+    border-radius: 2px;
+}
 /* ====================================
 RESPONSIVE
 ==================================== */
