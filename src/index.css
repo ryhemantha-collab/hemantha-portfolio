@@ -50,8 +50,17 @@
   }
 }
 
+/* Explicit body styles to fix mobile light-mode black background issues */
 body {
   margin: 0;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+/* Forces mobile/desktop browsers to respect manual toggle state instead of auto-inverting */
+body.dark-mode {
+  background-color: #222222 !important;
+  color: #ffffff !important;
 }
 
 #root {
